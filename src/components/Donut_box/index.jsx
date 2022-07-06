@@ -10,7 +10,7 @@ const Donutbox = (props)=>{
         <div className={styles.donut_container}>
                 <div className={styles.main_box}>
                     <div className={styles.img}>
-                        <img src={donut} height={150} width={150} alt='donut picture'/>
+                        <img src={donut} alt='donut picture'/>
                     </div>
                     <div className={styles.title_icon}>
                         <div className={styles.title_box}><p>{props.name}</p></div>

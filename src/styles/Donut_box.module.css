@@ -4,14 +4,16 @@
 
 }
 
-.img {
+.img img {
     border-radius: 1rem;
     cursor: pointer;
+    height: 100%; 
+    width: 100%;
 }
 
 .title_icon {
     display: flex;
-    padding-top: 10px;
+    align-items: center;
 }
 
 .title_box {
@@ -36,4 +38,30 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+.img img {
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 100%; 
+    width: 100%;
+}
+
+.title_box p {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2B3C5C;
+    max-width: 110px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.title_icon {
+    display: flex;
+    align-items: center;
+
+}
+
 }
