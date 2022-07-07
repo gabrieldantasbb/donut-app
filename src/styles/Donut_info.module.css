@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  padding: 2rem 15rem 2rem 15rem;
+  height: 600px;
+}
+
+.main_img {
+  flex: 1;
+}
+
+.main_content {
+  flex: 2;
+}

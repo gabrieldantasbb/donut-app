@@ -1,10 +1,15 @@
 import React from 'react';
 import './styles/globals.css'
-import {Home} from './pages'
+import {Home, Donut_info} from './pages'
+import { Header, Footer } from './components';
 
 const App = () => {
     return (
-        <Home/>
+        <>
+                <Header/>
+                <Donut_info/>
+                <Footer/>
+        </>
     )
 }
 
