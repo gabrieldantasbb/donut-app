@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Footer.module.css";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <div className={styles.footer}>
       <div className={styles.footer_items}>
         <div>
           <h1>Sobre Nós</h1>
@@ -44,7 +44,7 @@ const Footer = () => {
       <div className={styles.copyright}>
         <p>© 2022 - Gabriel Dantas</p>
       </div>
-    </footer>
+    </div>
   );
 };
 

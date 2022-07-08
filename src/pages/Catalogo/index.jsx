@@ -1,23 +1,27 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
-import { Donutbox, ApiMap, Header, Footer } from "../../components";
+import { Donutbox, Header, Footer, ArrowBack } from "../../components";
+import styles from '../../styles/Catalogo.module.css'
 
-const Home = () => {
+const Catalogo = () => {
   return (
     <>
       <div className={styles.header}>
         <Header />
       </div>
-      <div className={styles.main}>
-        <h1 className={styles.title}>
-          Qual Donut
-          <br /> você quer hoje?
-        </h1>
-        <div className={styles.search_bar}>
-          <input type={"text"} placeholder={"Pesquisar..."} />
-        </div>
+
+      <div className={styles.arrow}><ArrowBack/></div>
+      
+      
+        <div className={styles.main}>
+        <div className={styles.title}><h1>Sabores incríveis!</h1></div>
         <div className={styles.grid}>
           <div className={styles.card}>
+            <Donutbox name={"Donut Brigadeiro"} />
+          </div>
+          <div className={styles.card}>
+            <Donutbox name={"Donut Home Simpson"} />
+          </div>
+          <div className={styles.card}>
             <Donutbox name={"Donut Home Simpson"} />
           </div>
           <div className={styles.card}>
@@ -36,18 +40,7 @@ const Home = () => {
             <Donutbox name={"Donut Home Simpson"} />
           </div>
         </div>
-        <div className={styles.button}>
-          <a>Ver mais</a>
         </div>
-        <div className={styles.location}>
-          <h1 className={styles.title}>Onde encontrar...</h1>
-          <div className={styles.location_api}>
-            <div>
-              <ApiMap />
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={styles.footer}>
         <Footer />
       </div>
@@ -55,4 +48,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Catalogo;

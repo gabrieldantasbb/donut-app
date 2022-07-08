@@ -1,15 +1,12 @@
 import React from 'react';
-import './styles/globals.css'
-import {Home, Donut_info} from './pages'
-import { Header, Footer } from './components';
+import './styles/globals.css';
+import { Home, Catalogo, DonutsBar, FoodBike, Product, SobreNos } from './pages';
 
 const App = () => {
     return (
-        <>
-                <Header/>
-                <Donut_info/>
-                <Footer/>
-        </>
+        <div className='container_geral'>
+            <Home/>
+        </div>
     )
 }
 

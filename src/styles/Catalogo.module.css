@@ -1,0 +1,67 @@
+.arrow {
+  display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin:0px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+  }
+  
+  .card {
+    margin: 0.4rem;
+    max-width: 195px;
+    
+  }
+
+  @media (max-width: 800px) {
+    .header {
+      display: none;
+    }
+
+    .title h1 {
+      font-size: 2rem;
+      margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .arrow {
+      display: block;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    .main {
+      padding: 1rem 2rem 1em 2rem;
+      height: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      margin: 0.4rem;
+      max-width: 130px;
+      max-height: 200px;
+    }
+
+  }

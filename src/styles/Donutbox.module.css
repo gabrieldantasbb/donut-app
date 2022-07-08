@@ -1,0 +1,59 @@
+.main_box {
+  display: flex;
+  flex-direction: column;
+}
+.image img {
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.title {
+  padding-left: 0.5rem;
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100px;
+}
+
+.plus svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+    .donut_container {
+      max-width: 130px;
+      max-height: 200px;
+    }
+
+    .img img {
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title p {
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  .title_icon {
+    display: flex;
+    align-items: center;
+  }
+}

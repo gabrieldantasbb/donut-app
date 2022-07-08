@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../../styles/Service.module.css";
 import donut from "../../assets/donut_homer.png";
-import { Header, ArrowBack, Contact, Footer } from "../../components";
+import { Header, ArrowBack, Contact,Footer } from "../../components";
 
-const DonutInfo = () => {
+const DonutsBar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -17,7 +17,7 @@ const DonutInfo = () => {
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
-            <h1>Donut Açúcar Caramelizado</h1>
+            <h1>Donuts bar</h1>
           </div>
           <div className={styles.content_text}>
             <p>
@@ -31,7 +31,7 @@ const DonutInfo = () => {
           <div className={styles.contact_button}>
           <Contact
             link={"https://api.whatsapp.com/send?phone=5521979109269"}
-            desc={"Encomendar"}
+            desc={"Fazer Orçamento"}
           />
           </div>
         </div>
@@ -43,4 +43,4 @@ const DonutInfo = () => {
   );
 };
 
-export default DonutInfo;
+export default DonutsBar;
