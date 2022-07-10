@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,26 +10,36 @@ const Header = () => {
           src="https://cdn0.iconfinder.com/data/icons/fastfood-31/64/donut-doughnut-strawberry-snack-dessert-fastfood-food-512.png"
           height={70}
           width={70}
-          alt="Picture of a donut"
+          alt="Donut"
         />
       </div>
-      <div className={styles.menubar}>
-        <div>
-          <a>SOBRE NÓS</a>
-        </div>
-        <div>
-          <a>FOOD BIKE</a>
-        </div>
-        <div>
-          <a>DONUTS BAR</a>
-        </div>
-        <div>
-          <a>CATÁLOGO</a>
-        </div>
-        <div className={styles.btn_home}>
-          <a>HOME</a>
-        </div>
-      </div>
+      <ul className={styles.menubar}>
+        <li>
+          <Link to="sobrenos">
+            <p>SOBRE NOS</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="foodbike">
+            <p>FOODBIKE</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="donutsbar">
+            <p>DONUTS BAR</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="catalogo">
+            <p>CATALOGO</p>
+          </Link>
+        </li>
+        <li className={styles.btn_home}>
+          <Link to="/">
+            <p>HOME</p>
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 };

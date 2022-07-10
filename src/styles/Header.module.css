@@ -13,7 +13,7 @@
     margin-left: 11rem;
   }
   
-  .menubar div {
+  .menubar li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,13 +33,13 @@
     align-items: center;
   }
   
-  .menubar div a {
+  .menubar li p {
     font-size: 1rem;
     text-align: center;
     font-weight: 700;
     color: #fff;
   }
   
-  .menubar div {
+  .menubar li {
     cursor: pointer;
   }
