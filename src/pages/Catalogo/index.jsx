@@ -1,22 +1,22 @@
 import React from "react";
-import { Donutbox, Header, Footer, ArrowBack } from "../../components";
-import styles from '../../styles/Catalogo.module.css'
+import { Donutbox, Footer, ArrowBack } from "../../components";
+import styles from "../../styles/Catalogo.module.css";
 
 const Catalogo = () => {
+
   return (
     <>
-      <div className={styles.header}>
-        <Header />
+      <div className={styles.arrow}>
+        <ArrowBack />
       </div>
 
-      <div className={styles.arrow}><ArrowBack/></div>
-      
-      
-        <div className={styles.main}>
-        <div className={styles.title}><h1>Sabores incríveis!</h1></div>
+      <div className={styles.main}>
+        <div className={styles.title}>
+          <h1>Sabores incríveis!</h1>
+        </div>
         <div className={styles.grid}>
           <div className={styles.card}>
-            <Donutbox name={"Donut Brigadeiro"} />
+            <Donutbox name={"Donut Brigadeiro"}/>
           </div>
           <div className={styles.card}>
             <Donutbox name={"Donut Home Simpson"} />
@@ -40,7 +40,7 @@ const Catalogo = () => {
             <Donutbox name={"Donut Home Simpson"} />
           </div>
         </div>
-        </div>
+      </div>
       <div className={styles.footer}>
         <Footer />
       </div>

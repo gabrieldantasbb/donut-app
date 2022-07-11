@@ -1,15 +1,11 @@
 import React from "react";
 import styles from "../../styles/Service.module.css";
 import donut from "../../assets/donut_homer.png";
-import { Header, ArrowBack, Contact, Footer } from "../../components";
+import { ArrowBack, Contact, Footer } from "../../components";
 
 const FoodBike = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <Header />
-      </div>
-      
+    <div className={styles.container}> 
       <div className={styles.main}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>

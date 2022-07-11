@@ -5,11 +5,7 @@ import { Header, ArrowBack, Contact, Footer } from "../../components";
 
 const DonutInfo = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <Header />
-      </div>
-      
+    <div className={styles.container}>     
       <div className={styles.main}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>

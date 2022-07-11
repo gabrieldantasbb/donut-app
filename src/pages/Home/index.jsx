@@ -5,9 +5,6 @@ import { Donutbox, ApiMap, Header, Footer } from "../../components";
 const Home = () => {
   return (
     <>
-      <div className={styles.header}>
-        <Header />
-      </div>
       <div className={styles.main}>
         <h1 className={styles.title}>
           Qual Donut

@@ -31,10 +31,6 @@
   }
 
   @media (max-width: 800px) {
-    .header {
-      display: none;
-    }
-
     .title h1 {
       font-size: 2rem;
       margin: 1rem 0rem 0rem 0rem;
