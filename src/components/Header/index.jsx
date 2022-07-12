@@ -6,12 +6,14 @@ const Header = () => {
   return (
     <header className={styles.header_desktop}>
       <div className={styles.icon_home}>
+      <Link to="/">
         <img
           src="https://cdn0.iconfinder.com/data/icons/fastfood-31/64/donut-doughnut-strawberry-snack-dessert-fastfood-food-512.png"
           height={70}
           width={70}
           alt="Donut"
         />
+        </ Link>
       </div>
       <ul className={styles.menubar}>
         <li>
