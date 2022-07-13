@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/Service.module.css";
 import donut from "../../assets/donut_homer.png";
 import { ArrowBack, Contact, Footer } from "../../components";
+import sanityClient from "../../lib/client"
 
 const FoodBike = () => {
   return (
@@ -9,7 +10,11 @@ const FoodBike = () => {
       <div className={styles.main}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>
-          <img src={donut} alt="donut" height={300} width={300} />
+          <img
+              src={donut}  
+              alt="donut" 
+              height={300} 
+              width={300} />
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
