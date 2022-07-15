@@ -1,5 +1,4 @@
-import sanityClient from '@sanity/cli';
-import imageUrlBuilder from '@sanity/image-url';
+import sanityClient from "@sanity/client";
 
 export default sanityClient ({
     projectId: 'cnofmowq',

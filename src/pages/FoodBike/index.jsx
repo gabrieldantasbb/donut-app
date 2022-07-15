@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../styles/Service.module.css";
 import donut from "../../assets/donut_homer.png";
 import { ArrowBack, Contact, Footer } from "../../components";
-import sanityClient from "../../lib/client"
 
 const FoodBike = () => {
   return (
