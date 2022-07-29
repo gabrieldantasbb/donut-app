@@ -38,6 +38,7 @@
   .content_text {
     max-width: 37rem;
     margin: 2rem 0rem 2rem 0rem;
+    text-align: justify;
   }
   
   @media (max-width: 600px) {

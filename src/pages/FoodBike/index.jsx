@@ -1,31 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/Service.module.css";
 import donut from "../../assets/donut_homer.png";
 import { ArrowBack, Contact, Footer } from "../../components";
+import sanityClient from "../../lib/Client";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+	return builder.image(source);
+}
 
 const FoodBike = () => {
+
+  const [banners, setBanners] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "banners"]{
+        _id,
+        bannerName,
+        bannerDesc,
+        bannerImage{
+          asset->{
+            _id,
+            url
+          },
+        }
+      }`
+      )
+      .then((data) => setBanners(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className={styles.container}> 
+    {banners?.slice(2, 3).map((banner) => (<>
       <div className={styles.main}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>
           <img
-              src={donut}  
-              alt="donut" 
-              height={300} 
-              width={300} />
+              src={urlFor(banner.bannerImage)}  
+              alt={banner.bannerName}
+              height={350} 
+              width={350} />
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
-            <h1>Food Bike</h1>
+            <h1>{banner.bannerName}</h1>
           </div>
           <div className={styles.content_text}>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, 
+              {banner.bannerDesc}
             </p>
           </div>
           <div className={styles.contact_button}>
@@ -39,6 +66,7 @@ const FoodBike = () => {
       <div className={styles.footer}>
         <Footer />
       </div>
+      </>))}
     </div>
   );
 };

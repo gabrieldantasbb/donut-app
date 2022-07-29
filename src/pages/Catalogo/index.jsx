@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom"
 import { Donutbox, Footer, ArrowBack } from "../../components";
 import styles from "../../styles/Catalogo.module.css";
-import sanityClient from "../../lib/client"
+import sanityClient from "../../lib/Client";
 
 const Catalogo = () => {
-  const [products, setProducts] = useState(null);
+  const [donuts, setDonuts] = useState(null);
+  const { slug } = useParams();
 
-useEffect(() => {
-  sanityClient
-  .fetch(
-    `*[_type =="product"]`
-  )
-  .then((data) => setProducts(data)).catch(console.error);
-}, []);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "donuts"]{
+        _id,
+        donutName,
+        donutDesc,
+        donutImage{
+          asset->{
+            _id,
+            url
+          },
+        }
+      }`
+      )
+      .then((data) => setDonuts(data))
+      .catch(console.error);
+  }, [slug]);
 
   return (
     <>
@@ -25,35 +38,10 @@ useEffect(() => {
           <h1>Sabores incríveis!</h1>
         </div>
         <div className={styles.grid}>
-          {products?.map((product) => 
+          {donuts?.map((donut) => (
           <div className={styles.card}>
-          <Donutbox key={product._id} product={product} />
-          </div>)}
-          {console.log({products})}
-          {/*<div className={styles.card}>
-            <Donutbox name={"Donut Brigadeiro"}/>
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>*/}
+          <Donutbox key={donut._id} donut={donut} />
+          </div>))}
         </div>
       </div>
       <div className={styles.footer}>

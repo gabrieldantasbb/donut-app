@@ -1,36 +1,38 @@
 import React from 'react';
 import styles from '../../styles/Donutbox.module.css';
-import {FaPlusCircle} from 'react-icons/fa';
-import donut from '../../assets/donut_homer.png'
+import { FaPlusCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-import sanityClient from "../../lib/client";
+import sanityClient from "../../lib/Client";
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
-    return builder.image(source);
+	return builder.image(source);
 }
 
-const Donutbox = ({ product: { image, name, slug, price } })=>{
+const Donutbox = ({ donut }) => {
+
     return (
         <div className={styles.donut_container}>
                 <div className={styles.main_box}>
                     <div className={styles.image}>
                         <img 
-                            src={urlFor(image && image[0])} 
-                            alt={name}
+                            src={urlFor(donut.donutImage)}
+                            alt={donut.donutName}
                             />
                     </div>
                     <div className={styles.details}>
-                        <div className={styles.title}><p>{name}</p></div>
+                        <div className={styles.title}><p>{donut.donutName}</p></div>
+                        <Link to={"/donut/" + donut.slug}>
                         <div className={styles.plus}>
                             <FaPlusCircle/>
                         </div>
+                        </Link>
                     </div>
                 </div>
         </div>
     )
 }
-
 export default Donutbox;

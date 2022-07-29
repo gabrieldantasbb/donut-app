@@ -1,11 +1,11 @@
 {
   "root": true,
-  "api": {
-    "projectId": "cnofmowq",
-    "dataset": "production"
-  },
   "project": {
-    "name": "sanity-donut-next"
+    "name": "donut-app-sanity"
+  },
+  "api": {
+    "projectId": "rwq0iwi3",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

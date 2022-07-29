@@ -53,11 +53,11 @@
   width: 9rem;
   border-radius: 22px;
   cursor: pointer;
+  text-align: center;
 }
 
-.button a {
-  font-size: 14px;
-  text-align: center;
+.button button {
+  all: unset;
   font-weight: 500;
   color: #fff;
 }

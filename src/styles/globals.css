@@ -25,21 +25,7 @@ input {
 }
 
 @media (max-width: 800px) {
-  header {
+  .header {
     display: none;
   }
 }
-
-/*        <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-        <Route path="catalogo" element={<Catalogo />}>
-          <Route path=":product" element={<Product />} />
-        </Route>
-        <Route path="donutsbar" element={<DonutsBar />} />
-        <Route path="foodbike" element={<FoodBike />} />
-        <Route path="sobrenos" element={<SobreNos />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>*/
