@@ -17,6 +17,15 @@ export default {
         },
         validation: Rule => Rule.required()
       },
+      { 
+        name: 'slug',
+        title: 'Slug',
+        type: 'slug',
+        options: {
+          source: 'name',
+          maxLength: 90,
+        }
+      },
       {
         title: "Donut Image",
         name: "donutImage",

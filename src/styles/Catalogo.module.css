@@ -18,10 +18,11 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
     align-items: center;
     justify-content: center;
     max-width: 40rem;
+    margin: 1rem;
   }
   
   .card {

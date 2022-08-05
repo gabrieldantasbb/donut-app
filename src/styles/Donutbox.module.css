@@ -47,12 +47,12 @@
 
 @media (max-width: 600px) {
   
-    .donut_container {
-      max-width: 130px;
-      max-height: 200px;
-    }
-
-    .img img {
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .image img {
     border-radius: 1rem;
     cursor: pointer;
     height: 100%;

@@ -39,8 +39,8 @@ const Catalogo = () => {
         </div>
         <div className={styles.grid}>
           {donuts?.map((donut) => (
-          <div className={styles.card}>
-          <Donutbox key={donut._id} donut={donut} />
+          <div className={styles.card} key={donut._id}>
+          <Donutbox donut={donut} />
           </div>))}
         </div>
       </div>

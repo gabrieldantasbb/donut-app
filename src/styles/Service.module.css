@@ -16,7 +16,7 @@
   }
   
   .main_img {
-   flex: 1 1 100px;
+   flex: 1 1 50px;
    
   }
   
@@ -65,6 +65,17 @@
       align-items: center;
       margin-top: 2rem;
     }
+
+    .contact_button {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .main_img img {
+      border-radius: 30px ;
+      max-width: 296px;
+    }
+
     .content_text {
       max-width: 37rem;
       margin: 0rem 0rem 0rem 0rem;

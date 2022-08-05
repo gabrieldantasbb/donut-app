@@ -39,8 +39,8 @@ const Home = () => {
         </div>
         <div className={styles.grid}>
         {donuts?.slice(0, 6).map((donut) => (
-          <div className={styles.card}>
-          <Donutbox key={donut._id} donut={donut} />
+          <div className={styles.card} key={donut._id}>
+          <Donutbox donut={donut} />
           </div>))}
         
           {console.log({donuts})}
