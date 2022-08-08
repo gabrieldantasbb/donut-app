@@ -1,3 +1,10 @@
+@media (min-width: 800px) {
+.menuMobile {
+  display: none;
+}
+
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,8 +13,8 @@
 }
 
 .title {
-  line-height: 1.15;
-  font-size: 4rem;
+ line-height: 1.15;
+  font-size: 4rem; 
   max-width: 37rem;
   margin: 1rem;
 }
@@ -30,8 +37,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-template-columns: auto auto auto;
   flex-wrap: wrap;
-  max-width: 40rem;
+  max-width: 50rem;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -45,7 +54,7 @@
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: #efad33;
@@ -72,6 +81,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .menuMobile {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .title {

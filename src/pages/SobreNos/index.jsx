@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Service.module.css";
-import { ArrowBack, Contact,Footer } from "../../components";
+import { ArrowBack, Contact } from "../../components";
 import sanityClient from "../../lib/Client";
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -34,15 +34,15 @@ const SobreNos = () => {
 
   return (
     <div className={styles.container}>
-      {banners?.slice(1, 2).map((banner) => (<> 
-      <div className={styles.main}>
+      {banners?.slice(1, 2).map((banner) => (
+      <div className={styles.main} key={banner._id}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>
           <img 
           src={urlFor(banner.bannerImage)}
           alt={banner.bannerName}
-          height={350} 
-          width={350} />
+          height={310} 
+          width={310} />
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
@@ -61,10 +61,7 @@ const SobreNos = () => {
           </div>
         </div>
       </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
-      </>))}
+))}
     </div>
   );
 };

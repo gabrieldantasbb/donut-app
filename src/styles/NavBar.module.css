@@ -17,6 +17,8 @@
 .Menuicon {
     cursor: pointer;
     z-index: 2;
+    margin-left: -9rem;
+    position: absolute;
 }
 
 .menuList {
@@ -24,29 +26,23 @@
     flex-direction: column;
     z-index: 1;
     background: #FF90C5;
-    position: absolute;
-    margin-top: -2rem;
-    margin-left: -2rem;
-    min-height: 100vh;
-    width: 250px;
-    padding-top: 100px;
-    padding-left: 10px;
-    box-shadow: 0 8px 24px #000000;
-    border-radius: 1px;
+    padding-top: 2rem;
+    max-width: auto;
+    box-shadow: 0 2px 6px #000000;
 }
 
 .menuList ul {
     list-style: none;
-    font-family: "roboto";
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     color: #fff;
+    margin-left: 7rem;
 }
 
 .menuList ul li{
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
-.menuList ul li p {
+.menuList ul li a {
     cursor: pointer;
 }

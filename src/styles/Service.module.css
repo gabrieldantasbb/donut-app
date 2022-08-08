@@ -1,14 +1,10 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+    display: grid;
   }
   
   .main {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 20rem 1rem 15rem;
+    padding: 1.5rem 20rem 3.1rem 20rem;
   }
   
   .arrow {
@@ -26,6 +22,7 @@
   
   .main_content {
     flex: 1 1 100px;
+    width: 40rem;
   }
   
   
@@ -44,18 +41,21 @@
   @media (max-width: 600px) {
     .arrow {
       display: block;
+      margin-top: 2rem;
       padding-bottom: 2em;
     }
   
     .main {
       display: flex;
       flex-direction: column;
-      padding: 2rem 2rem 1rem 2rem;
+      padding: 1rem 0rem 1rem 2rem;
     }
     
     .title h1 {
       line-height: 1.15;
       font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 800;
     }
     
     .main_content {
@@ -63,17 +63,23 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 2rem;
+      margin-top: 1rem;
+      width: 22rem;
+    }
+
+    .main_content p {
+      margin-bottom: 2rem;
+
     }
 
     .contact_button {
       padding-left: 15%;
       padding-right: 15%;
+      margin-bottom: 2rem;
     }
 
     .main_img img {
       border-radius: 30px ;
-      max-width: 296px;
     }
 
     .content_text {

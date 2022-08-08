@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom"
-import { Donutbox, Footer, ArrowBack } from "../../components";
+import { Donutbox, ArrowBack } from "../../components";
 import styles from "../../styles/Catalogo.module.css";
 import sanityClient from "../../lib/Client";
 
@@ -43,9 +43,6 @@ const Catalogo = () => {
           <Donutbox donut={donut} />
           </div>))}
         </div>
-      </div>
-      <div className={styles.footer}>
-        <Footer />
       </div>
     </>
   );

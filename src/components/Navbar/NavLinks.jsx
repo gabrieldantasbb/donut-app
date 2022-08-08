@@ -1,25 +1,23 @@
-import React from 'react';
+import React from "react";
 import styles from "../../styles/NavBar.module.css";
+import { Link } from "react-router-dom";
 
 const Navlinks = () => {
   return (
     <div className={styles.menuList}>
       <ul>
-        <li>
-            <p>Home</p>
-        </li>
-        <li>
-            <p>Catálogo</p>
-        </li>
-        <li>
-            <p>Donuts bar</p>
-        </li>
-        <li>
-            <p>Food Bike</p>
-        </li>
-        <li>
-            <p>Sobre nós</p>
-        </li>
+        <Link to="catalogo">
+          <li>Catálogo</li>
+        </Link>
+        <Link to="donutsbar">
+          <li>Donuts Bar</li>
+        </Link>
+        <Link to="foodbike">
+          <li>Food Bike</li>
+        </Link>
+        <Link to="sobrenos">
+          <li>Sobre nós</li>
+        </Link>
       </ul>
     </div>
   );

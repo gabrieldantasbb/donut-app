@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
-import { Donutbox, ApiMap, Footer } from "../../components";
+import { Donutbox, ApiMap } from "../../components";
+import MenuMobile from "../../components/Navbar/MobileNavigation";
 import sanityClient from "../../lib/Client";
 import { Link } from "react-router-dom"
 
@@ -30,6 +31,9 @@ const Home = () => {
   return (
     <>
       <div className={styles.main}>
+      <div className={styles.menuMobile}>
+          <MenuMobile />
+        </div>
         <h1 className={styles.title}>
           Qual Donut
           <br /> você quer hoje?
@@ -42,26 +46,6 @@ const Home = () => {
           <div className={styles.card} key={donut._id}>
           <Donutbox donut={donut} />
           </div>))}
-        
-          {console.log({donuts})}
-          {/*<div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-          </div>
-          <div className={styles.card}>
-            <Donutbox name={"Donut Home Simpson"} />
-  </div>*/}
         </div>
         <div className={styles.button}>
           <Link to='catalogo'><button>Ver mais</button></Link>
@@ -74,9 +58,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.footer}>
-        <Footer />
       </div>
     </>
   );

@@ -1,21 +1,20 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/globals.css";
-import { Header } from "./components";
-import MenuMobile from "./components/Navbar/MobileNavigation";
+import {Header, Footer} from "./components";
 import MainRoutes from "./routes";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <div className="header">
           <Header />
         </div>
-        <div className="menuMobile">
-          <MenuMobile/>
+        <MainRoutes />
+        <div className="footer">
+          <Footer />
         </div>
-        <MainRoutes/>
       </div>
     </BrowserRouter>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../lib/Client";
 import styles from "../../styles/Service.module.css";
-import { ArrowBack, Contact, Footer } from "../../components";
+import { ArrowBack, Contact } from "../../components";
 import  ImageUrlBuilder  from "@sanity/image-url";
 import { useParams } from "react-router-dom";
 
@@ -42,7 +42,7 @@ const Product = () => {
           <ArrowBack />
         </div>
         <div className={styles.main_img}>
-          <img src={urlFor(donut.donutImage)} alt={donut.donutName} height={350} width={350} />
+          <img src={urlFor(donut.donutImage)} alt={donut.donutName} height={335} width={335} />
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
@@ -60,9 +60,6 @@ const Product = () => {
         </div>
       </div>
       ))}
-      <div className={styles.footer}>
-        <Footer />
-      </div>
     </div>
   );
 };
