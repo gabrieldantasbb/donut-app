@@ -58,6 +58,10 @@ p {
   flex-grow: 1;
 }
 
+.copyright p {
+  font-size: 11px;
+}
+
 @media (max-width: 600px) {
   .footer {
     height: 100%;

@@ -28,7 +28,7 @@
     background: #FF90C5;
     padding-top: 2rem;
     max-width: auto;
-    box-shadow: 0 2px 6px #000000;
+    filter: drop-shadow(0px 4px 25px rgba(254, 118, 215, 0.673));
 }
 
 .menuList ul {
@@ -36,7 +36,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    margin-left: 7rem;
+    margin-left: 5.5rem;
 }
 
 .menuList ul li{

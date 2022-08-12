@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>© 2022 - Gabriel Dantas</p>
+        <p> 2022 © Website designed by Gabriel Dantas</p>
       </div>
     </div>
   );

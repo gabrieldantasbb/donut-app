@@ -54,7 +54,6 @@ const Home = () => {
           <h1 className={styles.title}>Onde encontrar...</h1>
           <div className={styles.location_api}>
             <div>
-              <ApiMap />
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@
   border-radius: 1rem;
   cursor: pointer;
   background-color:#ff90c5 ;
+  box-shadow: 8px 8px 24px rgba(255, 144, 197, 0.4);
 }
 .image img {
   position: absolute;
