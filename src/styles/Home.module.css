@@ -1,20 +1,60 @@
 @media (min-width: 800px) {
-.menuMobile {
-  display: none;
-}
-
+  .menuMobile {
+    display: none;
+  }
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.hero_container {
+  display: flex;
+  max-width: 740px;
+  margin-left: -300px;
+}
+
+.hero_content {
+  position: relative;
+}
+
+.hero_title h1 {
+  width: 700px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 102px;
+}
+
+.subtitle p {
+  max-width: 400px;
+  max-height: 99px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 1px;
+}
+
+.hero_button {
+  margin-top: 61px;
+}
+
+.hero_banner {
+  margin-left: -200px;
+}
+
+.hero_banner img {
+  width: 540px;
+  height: 540px;
+}
+
 .title {
- line-height: 1.15;
-  font-size: 4rem; 
+  line-height: 1.15;
+  font-size: 4rem;
   max-width: 37rem;
   margin: 1rem;
 }
@@ -84,9 +124,46 @@
     align-items: center;
   }
 
+  .hero_container {
+    display: none;
+    flex-direction: column-reverse;
+    margin-left: 100px;
+  }
+
+  .hero_banner {
+    margin-left: 0px;
+  }
+
+  .hero_banner img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .hero_content {
+    position: unset;
+  }
+
+  .hero_title h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .subtitle {
+    max-width: 200px;
+    max-height: 99px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1px;
+  }
+
   .menuMobile {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .title {
@@ -94,10 +171,6 @@
     font-size: 2.5rem;
     max-width: 20rem;
     margin: 0px;
-  }
-
-  .search_bar {
-    max-width: 18rem;
   }
 
   .grid {
@@ -112,12 +185,15 @@
   }
 
   .card {
-    width: 150px;
+    max-width: 150px;
   }
 
   .location {
     padding: 2rem;
-    margin: 0px
+    margin: 0px;
   }
 
+  .footer_text {
+    max-width: 200px;
+  }
 }

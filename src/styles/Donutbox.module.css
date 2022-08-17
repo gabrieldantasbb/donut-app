@@ -49,8 +49,8 @@
 @media (max-width: 600px) {
   
   .image {
-    width: 150px;
-    height: 150px;
+    max-width: 125px;
+    max-height: 125px;
   }
   
   .image img {
@@ -62,11 +62,12 @@
 
   .title p {
     margin: 0px;
-    font-size: 14px;
+    font-size: 12px;
+    max-width: 100px;
   }
 
-  .title_icon {
-    display: flex;
-    align-items: center;
+  .plus {
+    max-width: 20px;
+    max-height: 20px;
   }
 }

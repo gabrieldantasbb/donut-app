@@ -6,6 +6,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.app {
+  background-image: url("../assets/background_dsk_blob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 a, a:hover, a:focus, a:active {
   color: inherit;
   text-decoration: none;
@@ -28,5 +35,12 @@ input {
 @media (max-width: 800px) {
   .header {
     display: none;
+  }
+
+  .app {
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
   }
 }

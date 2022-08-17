@@ -11,34 +11,19 @@
 .menubar {
   display: flex;
   align-items: space-between;
-  margin-left: 11rem;
 }
 
 .menubar li {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  background-color: #efad33;
-  height: 2rem;
-  width: 10rem;
-  border-radius: 22px;
   cursor: pointer;
 }
 
-.menubar .btn_home {
-  display: flex;
-  background-color: #ff90c5;
-  align-items: center;
-}
 
 .menubar li p {
-  font-size: 1rem;
-  text-align: center;
   font-weight: 700;
-  color: #fff;
+  font-size: 14px;
+  line-height: 30px; 
+  text-align: center; 
+  color: #737373;
 }
 
