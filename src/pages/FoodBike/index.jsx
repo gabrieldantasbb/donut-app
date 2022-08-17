@@ -35,7 +35,7 @@ const FoodBike = () => {
 
   return (
     <div className={styles.container}> 
-    {banners?.slice(2, 3).map((banner) => (
+    {banners?.slice(4, 5).map((banner) => (
       <div className={styles.main} key={banner._id}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>

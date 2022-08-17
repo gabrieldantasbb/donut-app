@@ -34,7 +34,7 @@ const SobreNos = () => {
 
   return (
     <div className={styles.container}>
-      {banners?.slice(1, 2).map((banner) => (
+      {banners?.slice(3, 4).map((banner) => (
       <div className={styles.main} key={banner._id}>
         <div className={styles.arrow}><ArrowBack/></div>
         <div className={styles.main_img}>
