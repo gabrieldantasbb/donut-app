@@ -14,6 +14,7 @@
   display: flex;
   max-width: 740px;
   margin-left: -300px;
+  max-height: 520px;
 }
 
 .hero_content {
@@ -30,17 +31,17 @@
 }
 
 .subtitle p {
-  max-width: 400px;
-  max-height: 99px;
-  font-style: normal;
+  font-family: "roboto";
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: #676a6c;
+  max-width: 400px;
   margin-top: 1px;
 }
 
 .hero_button {
-  margin-top: 61px;
+  margin-top: 2rem;
 }
 
 .hero_banner {
@@ -51,26 +52,19 @@
   width: 540px;
   height: 540px;
 }
-
 .title {
+  display: flex;
+  justify-content: center;
+}
+.title h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 112px;
   line-height: 1.15;
-  font-size: 4rem;
   max-width: 37rem;
   margin: 1rem;
-}
-
-.search_bar {
-  margin: 1rem;
-  background-color: #ebedf0;
-  padding: 0.8rem;
-  border-radius: 10px;
-  max-width: 35rem;
-}
-
-.search_bar input {
-  font-family: system-ui;
-  color: #8c8e91;
-  font-weight: 700;
 }
 
 .grid {
@@ -94,9 +88,7 @@
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-bottom: 2rem;
   background-color: #efad33;
   height: 1.5rem;
   width: 9rem;
@@ -112,10 +104,6 @@
   color: #fff;
 }
 
-.location {
-  max-width: 600px;
-}
-
 @media (max-width: 800px) {
   .main {
     display: flex;
@@ -125,40 +113,47 @@
   }
 
   .hero_container {
-    display: none;
+    all: unset;
+    display: flex;
     flex-direction: column-reverse;
-    margin-left: 100px;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
   }
 
   .hero_banner {
-    margin-left: 0px;
+    all: unset;
+    margin-bottom: -4rem;
   }
 
   .hero_banner img {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 340px;
+    max-height: 340px;
   }
 
   .hero_content {
     position: unset;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
   }
 
   .hero_title h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
+    font-size: 56px;
     line-height: 50px;
   }
 
-  .subtitle {
-    max-width: 200px;
-    max-height: 99px;
-    font-style: normal;
+  .subtitle p{
+    max-width: 250px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 1px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+
+  .hero_button {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .menuMobile {
@@ -167,10 +162,16 @@
   }
 
   .title {
-    font-weight: 800;
-    font-size: 2.5rem;
-    max-width: 20rem;
+    margin-top: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .title h1 {
     margin: 0px;
+    font-weight: 800;
+    font-size: 56px;
+    max-width: 100%;
   }
 
   .grid {

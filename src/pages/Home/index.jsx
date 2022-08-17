@@ -77,10 +77,12 @@ const Home = () => {
             </div>
           </div>
         ))}
-        <h1 className={styles.title}>
-          Qual Donut
-          <br /> você quer hoje?
-        </h1>
+        <div className={styles.title}>
+          <h1>
+            Qual Donut
+            <br /> você quer hoje?
+          </h1>
+        </div>
         <div className={styles.grid}>
           {donuts?.slice(0, 6).map((donut) => (
             <div className={styles.card} key={donut._id}>

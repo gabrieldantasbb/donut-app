@@ -35,7 +35,7 @@ const DonutsBar = () => {
 
   return (
     <div className={styles.container}>
-      {banners?.slice(0, 1).map((banner) =>(
+      {banners?.slice(1, 2).map((banner) =>(
           <div className={styles.main} key={banner._id}>
             <div className={styles.arrow}>
               <ArrowBack />

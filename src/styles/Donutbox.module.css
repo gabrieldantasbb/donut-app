@@ -11,7 +11,7 @@
   border-radius: 1rem;
   cursor: pointer;
   background-color:#ff90c5 ;
-  box-shadow: 8px 8px 24px rgba(255, 144, 197, 0.4);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
 }
 .image img {
   position: absolute;
@@ -34,7 +34,8 @@
 }
 
 .title p {
-  font-weight: 600;
+  font-family: "poppins";
+  font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
   width: 100px;

@@ -12,7 +12,10 @@
 .title h1 {
   text-align: center;
   font-size: 5rem;
-  margin:0px
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 102px;
 }
 
 .grid {
@@ -34,8 +37,13 @@
 
   @media (max-width: 800px) {
     .title h1 {
-      font-size: 2rem;
-      margin: 1rem 0rem 0rem 0rem;
+      all:unset;
+      font-size: 5rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 56px;
+      margin-top: 2rem;
+      line-height: 5rem;
     }
 
     .arrow {

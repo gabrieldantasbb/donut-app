@@ -38,7 +38,7 @@ input {
   }
 
   .app {
-    background-image: unset;
+    background-image: url("../assets/background_mb_blob.svg");
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;

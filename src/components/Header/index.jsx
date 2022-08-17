@@ -18,7 +18,7 @@ const Header = () => {
       <ul className={styles.menubar}>
         <li>
           <Link to="sobrenos">
-            <p>SOBRE NOS</p>
+            <p>SOBRE NÓS</p>
           </Link>
         </li>
         <li>
@@ -33,12 +33,12 @@ const Header = () => {
         </li>
         <li>
           <Link to="catalogo">
-            <p>CATALOGO</p>
+            <p>CATÁLOGO</p>
           </Link>
         </li>
         <li className={styles.btn_home}>
           <Link to="/">
-            <p>HOME</p>
+            <p>INÍCIO</p>
           </Link>
         </li>
       </ul>
