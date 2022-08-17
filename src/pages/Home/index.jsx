@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
 import { Donutbox, Contact } from "../../components";
 import MenuMobile from "../../components/Navbar/MobileNavigation";
-import sanityClient from "../../lib/Client";
+import sanityClient from "../../lib/Client.js";
 import { Link } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 

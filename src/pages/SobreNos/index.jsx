@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Service.module.css";
 import { ArrowBack, Contact } from "../../components";
-import sanityClient from "../../lib/Client";
+import sanityClient from "../../lib/Client.js";
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom"
 import { Donutbox, ArrowBack } from "../../components";
 import styles from "../../styles/Catalogo.module.css";
-import sanityClient from "../../lib/Client";
+import sanityClient from "../../lib/Client.js";
 
 const Catalogo = () => {
   const [donuts, setDonuts] = useState(null);
