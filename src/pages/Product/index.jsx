@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import sanityClient from "../../lib/Client";
+import sanityClient from "../../lib/Client.js";
 import styles from "../../styles/Service.module.css";
 import { ArrowBack, Contact } from "../../components";
 import  ImageUrlBuilder  from "@sanity/image-url";

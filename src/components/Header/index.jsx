@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className={styles.header_desktop}>
       {banners?.slice(1, 2).map((banner) => (
-      <div className={styles.icon_home}>
+      <div className={styles.icon_home} key={banner._id}>
       <Link to="/">
         <img
           src={urlFor(banner.bannerImage)}
