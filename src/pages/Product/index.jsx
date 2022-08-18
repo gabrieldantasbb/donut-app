@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import sanityClient from "../../lib/Client.js";
+import client from "../../lib/client.js";
 import styles from "../../styles/Service.module.css";
 import { ArrowBack, Contact } from "../../components";
 import  ImageUrlBuilder  from "@sanity/image-url";
 import { useParams } from "react-router-dom";
 
-const builder = ImageUrlBuilder(sanityClient);
+const builder = ImageUrlBuilder(client);
 
 function urlFor(source){
   return builder.image(source);
@@ -16,7 +16,7 @@ const Product = () => {
   const  {slug}  = useParams();
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch(
         `*[_type == "donuts"]{
         _id,

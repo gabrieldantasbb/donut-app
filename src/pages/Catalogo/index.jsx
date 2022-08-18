@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { Donutbox, ArrowBack } from "../../components";
 import styles from "../../styles/Catalogo.module.css";
-import sanityClient from "../../lib/Client.js";
+import client from "../../lib/client.js";
 
 const Catalogo = () => {
   const [donuts, setDonuts] = useState(null);
   const { slug } = useParams();
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch(
         `*[_type == "donuts"]{
         _id,

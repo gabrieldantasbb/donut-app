@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
 import { Donutbox, Contact } from "../../components";
 import MenuMobile from "../../components/Navbar/MobileNavigation";
-import sanityClient from "../../lib/Client.js";
+import client from "../../lib/client.js";
 import { Link } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(client);
 
 function urlFor(source) {
   return builder.image(source);
@@ -17,7 +17,7 @@ const Home = () => {
   const [banners, setBanners] = useState(null);
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch(
         `*[_type == "banners"]{
         _id,
@@ -36,7 +36,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch(
         `*[_type == "donuts"]{
         _id,

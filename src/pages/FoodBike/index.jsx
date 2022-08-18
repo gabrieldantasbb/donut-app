@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Service.module.css";
 import { ArrowBack, Contact } from "../../components";
-import sanityClient from "../../lib/Client.js";
+import client from "../../lib/client.js";
 import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(client);
 
 function urlFor(source) {
 	return builder.image(source);
@@ -15,7 +15,7 @@ const FoodBike = () => {
   const [banners, setBanners] = useState(null);
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch(
         `*[_type == "banners"]{
         _id,

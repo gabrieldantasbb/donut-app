@@ -3,10 +3,10 @@ import styles from "../../styles/Donutbox.module.css";
 import { FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import sanityClient from "../../lib/Client.js";
+import client from "../../lib/client.js";
 import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(client);
 
 function urlFor(source) {
   return builder.image(source);
