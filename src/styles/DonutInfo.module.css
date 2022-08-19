@@ -16,19 +16,17 @@
 }
 
 .main_img {
- flex: 1 1 100px;
- border-radius: 10rem;
+  flex: 1 1 100px;
+  border-radius: 10rem;
 }
 
 .main_img img {
-  border-radius: 30px ;
-  max-width: 100%;
+  border-radius: 30px;
 }
 
 .main_content {
   flex: 1 1 100px;
 }
-
 
 .title h1 {
   line-height: 1.15;
@@ -56,28 +54,24 @@
   .main_img {
     flex: 1 1 100px;
     border-radius: 10rem;
-
-   }
-  
-  .title h1 {
-    line-height: 1.15;
-    font-size: 2.5rem;
   }
-  
+
   .main_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    max-width: 100%;
   }
+
+  .title h1 {
+    line-height: 1.15;
+    font-size: 2.5rem;
+  }
+
   .content_text {
-    all:unset;
-    height: 100%;
-    width: 100%;
     font-size: 14px;
     font-weight: 500;
     text-align: justify;
   }
-
 }
