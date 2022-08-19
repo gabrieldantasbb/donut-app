@@ -72,8 +72,13 @@
   }
 
   .content_text {
+    max-width: 100%;
     font-size: 14px;
     font-weight: 500;
     text-align: justify;
+  }
+
+  .content_text p{
+    max-width: 100%;
   }
 }
