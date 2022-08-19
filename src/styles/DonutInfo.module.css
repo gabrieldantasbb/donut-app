@@ -22,6 +22,7 @@
 
 .main_img img {
   border-radius: 30px ;
+  width: 100%;
 }
 
 .main_content {
@@ -65,7 +66,7 @@
     margin-top: 2rem;
   }
   .content_text {
-    max-width: 37rem;
+    max-width: 100%;
     margin: 0rem 0rem 0rem 0rem;
     font-size: 14px;
     font-weight: 500;

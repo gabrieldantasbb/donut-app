@@ -42,7 +42,7 @@ const Product = () => {
           <ArrowBack />
         </div>
         <div className={styles.main_img}>
-          <img src={urlFor(donut.donutImage)} alt={donut.donutName} height={335} width={335} />
+          <img src={urlFor(donut.donutImage)} alt={donut.donutName} height={"100%"} width={'100%'} />
         </div>
         <div className={styles.main_content}>
           <div className={styles.title}>
