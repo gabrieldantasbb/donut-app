@@ -15,7 +15,7 @@ const Mobilenavigation = ()=> {
                         />
     const closeIcon = <IoMdClose className={styles.Menuicon} 
                         size='40px' 
-                        color="white"
+                        color="black"
                         onClick={() => setOpen(!open)}
                         />
     return (
