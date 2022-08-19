@@ -1,5 +1,6 @@
 import sanityClient from "@sanity/client";
 
+
 const client = sanityClient({
   projectId: "rwq0iwi3", // find this at manage.sanity.io or in your sanity.json
   dataset: "production", // this is from those question during 'sanity init'
